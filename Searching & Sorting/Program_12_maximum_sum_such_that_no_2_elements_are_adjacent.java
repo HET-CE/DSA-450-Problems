@@ -1,4 +1,4 @@
-public class Program_11_maximum_sum_such_that_no_2_elements_are_adjacent {
+public class Program_12_maximum_sum_such_that_no_2_elements_are_adjacent {
 
     public static void totalAmount(int[] arr) {
         int len = arr.length, sum_odd = 0, sum_even = 0;
