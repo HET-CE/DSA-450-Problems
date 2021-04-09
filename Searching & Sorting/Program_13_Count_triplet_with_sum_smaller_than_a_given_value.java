@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class Progrm_13_Count_triplet_with_sum_smaller_than_a_given_value {
+public class Program_13_Count_triplet_with_sum_smaller_than_a_given_value {
 
     public static void triplets(int[] arr,int num) {
         Arrays.sort(arr);
