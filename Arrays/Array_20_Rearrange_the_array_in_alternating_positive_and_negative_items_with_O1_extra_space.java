@@ -16,27 +16,13 @@ public class Array_20_Rearrange_the_array_in_alternating_positive_and_negative_i
 		{
 			if (outofplace >= 0) 
 			{
-		       // find the item which must be moved into
-		       // the out-of-place entry if out-of-place
-		       // entry is positive and current entry is
-		       // negative OR if out-of-place entry is
-		       // negative and current entry is negative
-		       // then right rotate
-		       //
-		       // [...-3, -4, -5, 6...] -->   [...6, -3,
-		       // -4, -5...]
-		       //      ^                          ^
-		       //      |                          |
-		       //     outofplace      -->      outofplace
-		       //
+		     
 	       if (((arr[index] >= 0)
 	            && (arr[outofplace] < 0))
 	           || ((arr[index] < 0)
 	               && (arr[outofplace] >= 0))) {
 	           rightrotate(arr, n, outofplace, index);
 	
-	           // the new out-of-place entry is now 2
-	           // steps ahead
 	           if (index - outofplace >= 2)
 	               outofplace = outofplace + 2;
 	           else
@@ -44,10 +30,8 @@ public class Array_20_Rearrange_the_array_in_alternating_positive_and_negative_i
        }
    }
 
-			// if no entry has been flagged out-of-place
 		   if (outofplace == -1) 
 		   {
-		       // check if current entry is out-of-place
 		       if (((arr[index] >= 0)
 		            && ((index & 0x01) == 0))
 		           || ((arr[index] < 0)
@@ -57,8 +41,6 @@ public class Array_20_Rearrange_the_array_in_alternating_positive_and_negative_i
 		}
 }
 
-// A utility function to print 
-// an array 'arr[]' of size 'n'
 void printArray(int arr[], int n)
 	{
 	for (int i = 0; i < n; i++)
