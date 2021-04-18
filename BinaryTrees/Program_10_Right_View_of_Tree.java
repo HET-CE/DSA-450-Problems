@@ -39,8 +39,6 @@ public class Program_10_Right_View_of_Tree {
         tree.root.right.right = new Node(40);
 
         tree.rightView();
-        System.out.println();
-        // tree.printRightView(tree.root);
     }
 }
 

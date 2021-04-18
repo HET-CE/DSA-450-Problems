@@ -6,7 +6,6 @@ public class Program_8_Postorder_Traversal_of_a_tree_both_using_recursion_and_It
         int data;
         Node left, right;
 
-        // Function to create a new binary tree node having a given key
         public Node(int key) {
             data = key;
             left = right = null;
